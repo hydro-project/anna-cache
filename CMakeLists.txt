@@ -70,7 +70,7 @@ INCLUDE(FindProtobuf)
 FIND_PACKAGE(Protobuf REQUIRED)
 INCLUDE_DIRECTORIES(${PROTOBUF_INCLUDE_DIR})
 PROTOBUF_GENERATE_CPP(PROTO_SRC PROTO_HEADER 
-  ./common/proto/droplet.proto
+  ./common/proto/cloudburst.proto
   ./common/proto/anna.proto
   ./common/proto/causal.proto
   ./common/proto/shared.proto

@@ -42,9 +42,8 @@ while [[ ! -f "conf/anna-config.yml" ]]; do
   continue
 done
 
-
 echo -e "user:" >> conf/anna-config.yml
 echo -e "    ip: $IP" >> conf/anna-config.yml
 echo -e "    routing-elb: $ROUTE_ADDR" >> conf/anna-config.yml
 
-./build/functions/cache/src/flfunc-async-cache
+./build/target/cache/anna-cache

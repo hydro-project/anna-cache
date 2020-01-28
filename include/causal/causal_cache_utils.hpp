@@ -18,7 +18,7 @@
 #include "cache_threads.hpp"
 #include "causal.pb.h"
 #include "client/kvs_client.hpp"
-#include "droplet.pb.h"
+#include "cloudburst.pb.h"
 
 // period to report to the KVS about its key set
 const unsigned kCausalCacheReportThreshold = 5;
