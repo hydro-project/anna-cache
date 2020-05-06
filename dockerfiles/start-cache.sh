@@ -17,7 +17,7 @@
 cd $HYDRO_HOME/anna-cache
 mkdir -p conf
 
-IP=`ifconfig eth0 | grep 'inet addr:' | grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1 }'`
+IP=`ifconfig eth0 | grep 'inet' | grep -v inet6 | sed -e 's/^[ \t]*//' | cut -d' ' -f2`
 
 # Download latest version of the code from relevant repository & branch -- if
 # none are specified, we use hydro-project/anna by default.
